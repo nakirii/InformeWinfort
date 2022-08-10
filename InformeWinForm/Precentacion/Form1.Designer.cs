@@ -30,9 +30,9 @@ namespace Precentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource16 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource17 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource18 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.SalesReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SaleListingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.NetSaleByPeriodBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,15 +69,15 @@ namespace Precentacion
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource16.Name = "salesReport";
-            reportDataSource16.Value = this.SalesReportBindingSource;
-            reportDataSource17.Name = "salesListing";
-            reportDataSource17.Value = this.SaleListingBindingSource;
-            reportDataSource18.Name = "netSalesByPeriod";
-            reportDataSource18.Value = this.NetSaleByPeriodBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource16);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource17);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource18);
+            reportDataSource1.Name = "salesReport";
+            reportDataSource1.Value = this.SalesReportBindingSource;
+            reportDataSource2.Name = "salesListing";
+            reportDataSource2.Value = this.SaleListingBindingSource;
+            reportDataSource3.Name = "netSalesByPeriod";
+            reportDataSource3.Value = this.NetSaleByPeriodBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Precentacion.Report.ReportSales.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(220, 12);
             this.reportViewer1.Name = "reportViewer1";
@@ -105,6 +105,7 @@ namespace Precentacion
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(15, 166);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 31);
@@ -131,6 +132,7 @@ namespace Precentacion
             // 
             // button5
             // 
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(15, 327);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(168, 31);
@@ -141,6 +143,7 @@ namespace Precentacion
             // 
             // btn30dias
             // 
+            this.btn30dias.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn30dias.Location = new System.Drawing.Point(16, 129);
             this.btn30dias.Name = "btn30dias";
             this.btn30dias.Size = new System.Drawing.Size(168, 31);
@@ -151,6 +154,7 @@ namespace Precentacion
             // 
             // btnMes
             // 
+            this.btnMes.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMes.Location = new System.Drawing.Point(16, 92);
             this.btnMes.Name = "btnMes";
             this.btnMes.Size = new System.Drawing.Size(168, 31);
@@ -161,6 +165,7 @@ namespace Precentacion
             // 
             // btnult7
             // 
+            this.btnult7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnult7.Location = new System.Drawing.Point(16, 55);
             this.btnult7.Name = "btnult7";
             this.btnult7.Size = new System.Drawing.Size(168, 31);
@@ -171,6 +176,7 @@ namespace Precentacion
             // 
             // btnhoy
             // 
+            this.btnhoy.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhoy.Location = new System.Drawing.Point(16, 18);
             this.btnhoy.Name = "btnhoy";
             this.btnhoy.Size = new System.Drawing.Size(168, 31);
