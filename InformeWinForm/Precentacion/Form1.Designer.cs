@@ -30,9 +30,9 @@ namespace Precentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource10 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource11 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource12 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource16 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource17 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource18 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.SalesReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SaleListingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.NetSaleByPeriodBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,15 +69,15 @@ namespace Precentacion
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource10.Name = "salesReport";
-            reportDataSource10.Value = this.SalesReportBindingSource;
-            reportDataSource11.Name = "salesListing";
-            reportDataSource11.Value = this.SaleListingBindingSource;
-            reportDataSource12.Name = "netSalesByPeriod";
-            reportDataSource12.Value = this.NetSaleByPeriodBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource10);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource11);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource12);
+            reportDataSource16.Name = "salesReport";
+            reportDataSource16.Value = this.SalesReportBindingSource;
+            reportDataSource17.Name = "salesListing";
+            reportDataSource17.Value = this.SaleListingBindingSource;
+            reportDataSource18.Name = "netSalesByPeriod";
+            reportDataSource18.Value = this.NetSaleByPeriodBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource16);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource17);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource18);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Precentacion.Report.ReportSales.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(220, 12);
             this.reportViewer1.Name = "reportViewer1";
@@ -87,6 +87,9 @@ namespace Precentacion
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.dateTimefin);
             this.panel1.Controls.Add(this.dateTimeinicio);
@@ -184,7 +187,7 @@ namespace Precentacion
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Generador de Informes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SalesReportBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SaleListingBindingSource)).EndInit();
