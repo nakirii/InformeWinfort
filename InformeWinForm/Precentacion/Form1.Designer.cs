@@ -30,9 +30,9 @@ namespace Precentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.SalesReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SaleListingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.NetSaleByPeriodBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -70,15 +70,15 @@ namespace Precentacion
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource1.Name = "salesReport";
-            reportDataSource1.Value = this.SalesReportBindingSource;
-            reportDataSource2.Name = "salesListing";
-            reportDataSource2.Value = this.SaleListingBindingSource;
-            reportDataSource3.Name = "netSalesByPeriod";
-            reportDataSource3.Value = this.NetSaleByPeriodBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource4.Name = "salesReport";
+            reportDataSource4.Value = this.SalesReportBindingSource;
+            reportDataSource5.Name = "salesListing";
+            reportDataSource5.Value = this.SaleListingBindingSource;
+            reportDataSource6.Name = "netSalesByPeriod";
+            reportDataSource6.Value = this.NetSaleByPeriodBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Precentacion.Report.ReportSales.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(220, 12);
             this.reportViewer1.Name = "reportViewer1";
@@ -134,7 +134,7 @@ namespace Precentacion
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(168, 31);
             this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
+            this.button5.Text = "generar";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
